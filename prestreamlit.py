@@ -11,7 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 
 
-service = ChromeService(executable_path=ChromeDriverManager().install())
+service = ChromeService(executable_path=ChromeDriverManager(version="123.0.6312.86").install())
 chrome_options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
